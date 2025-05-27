@@ -1,0 +1,18 @@
+[Frontend Layer]        [Backend Layer]         [Data Layer]
++-------------+     HTTP/HTTPS     +------------------+     Database     +------------+
+|             |  --------------->  |                  |  ------------>  |            |
+|   Client    |    Request        |  App Server      |     Write       |  Database  |
+|             |  <---------------  |                  |  <-----------   |            |
++-------------+    Response        +------------------+      Read        +------------+
+        |                                 |                     |
+        |                                 |                     |
+        v                                 v                     v
+    Browser                          Node.js/Java/Python    MySQL/PostgreSQL
+    Mobile App                        Express/Spring/Django   MongoDB/Redis
+    Desktop App 
+
+Data Flow:
+→ HTTP Request (GET, POST, PUT, DELETE)
+← HTTP Response (JSON, HTML, etc.)
+→ Database Write (INSERT, UPDATE)
+← Database Read (SELECT, QUERY) 
