@@ -1,0 +1,13 @@
+{
+  "name": "jest-testing-demo",
+  "version": "1.0.0",
+  "description": "Simple Jest testing example",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+} 
